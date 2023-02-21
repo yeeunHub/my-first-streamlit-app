@@ -10,13 +10,13 @@ from copy import deepcopy
 from plotly.subplots import make_subplots
 
 # First some MPG Data Exploration
-@st.cache_data
+# @st.cache_data
 def load_data(path):
     df = pd.read_csv(path)
     return df
 
 
-mpg_df_raw = load_data(path="../data/mpg.csv")
+mpg_df_raw = load_data(path="mpg.csv")
 mpg_df = deepcopy(mpg_df_raw)
 
 # Add title and header
